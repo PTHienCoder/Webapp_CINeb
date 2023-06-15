@@ -1,0 +1,113 @@
+/* SIDEBAR */
+.sidebarpro{
+    position: fixed;
+    top: 8vh;
+    left: 0%;
+    width: 25%;
+    max-width: 100%;
+    height: 92vh;
+    padding-right: 0%;
+}
+
+
+
+/* FEED */
+.feedpro{
+
+    width: 85%;
+    max-width: 100%;
+    height: 92vh;
+    position: fixed;
+    overflow-y: scroll;
+    left: 22%;
+    right: 5%;
+    padding-top: 30px;
+    padding-right: 10%;
+    padding-left: 5%;
+}
+
+
+.feedpro::-webkit-scrollbar{
+    display: none;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+
+    .sidebarpro{
+          width: 0%;
+        max-width: 0%;
+    }
+
+   .feedpro{
+      width: 100%;
+      max-width: 100%;
+      top: 8vh;
+      left: 5%;
+      padding-right: 5%;
+      padding-left: 5%;
+     }
+
+    .image{
+        flex: 100%;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 400px){
+    .image .details p{
+        font-size: 16px;
+    }
+
+    .more .read-more, .more .icon-links a i{
+        font-size: 18px;
+    }
+
+     .sidebarpro{
+      visibility: hidden;
+      width: 0%;
+      max-width: 0%;
+     }
+     
+     .feedpro{
+      width: 100%;
+      max-width: 100%;
+      top: 8vh;
+      left: 5%;
+      padding-right: 5%;
+      padding-left: 5%;
+     }
+}
+   
+
+
+
+
+/////
+         
+
+            input[type=file] {
+              width: 250px;
+              max-width: 80%;
+              color: #444;
+              padding: 5px;
+              background: #fff;
+              border-radius: 10px;
+              border: 1px solid #555;
+            }
+
+            input[type=file]::file-selector-button {
+              margin-right: 20px;
+              border: none;
+              background: #084cdf;
+              padding: 10px 20px;
+              border-radius: 10px;
+              color: #fff;
+              cursor: pointer;
+              transition: background .2s ease-in-out;
+            }
+
+            input[type=file]::file-selector-button:hover {
+              background: #0d45a5;
+            }
